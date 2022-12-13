@@ -58,5 +58,19 @@ namespace UserRegistrationTesting
             string output = Code.TestPassword(input);
             Assert.AreEqual("Password  matches", output);
         }
+        /// <summary>
+        /// Validation of Email Parametrizun UC11
+        /// </summary>
+        [TestMethod]
+
+
+        public void CheckGiven_Email_Validation_usingParamerterisum()
+        {
+            string input = "abc@xyzhg.com";
+            RefactorData emailRefactor = new RefactorData(input);
+
+            string output = emailRefactor.TestEmail_Refector();
+            Assert.AreEqual("Email  matches", output);
+        }
     }
 }
