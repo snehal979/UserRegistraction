@@ -59,5 +59,16 @@ namespace UserRegistration
             else
                 return "Password regex failed";
         }
+        /// <summary>
+        /// LAMBDA EXPRESSION Uc13
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public bool ValidationFirstName(string input) => Regex.IsMatch(input, Name) ? true : false;
+        public bool ValidationLasttName(string input) => Regex.IsMatch(input, Name) ? true : false;
+        public bool ValidationEmail(string input) => Regex.IsMatch(input, Email) ? true : false;
+        public bool ValidationMobile(string input) => Regex.IsMatch(input, MobileNumber) ? true : false;
+        public bool ValidationPassword(string input) => Regex.IsMatch(input, Password) ? true : false;
+
     }
 }
