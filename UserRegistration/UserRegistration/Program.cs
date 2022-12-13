@@ -7,7 +7,7 @@ namespace UserRegistration
         public static void Main(string[] args)
         {
             Console.WriteLine("welcome to User Registration");
-            Console.WriteLine("hint 1. name(first/last) 2.email 3.Mobile number");
+            Console.WriteLine("hint 1. name(first/last) 2.email 3.Mobile number 4.Password");
 
             Validation Code = new Validation();
             int num = Convert.ToInt32(Console.ReadLine());
@@ -39,6 +39,11 @@ namespace UserRegistration
                     break;
                 case 3:
                     Console.WriteLine(Code.TestMobile("915335335353"));
+                    break;
+                case 4:
+                    Console.WriteLine("Enter the password");//"snehalnds."
+                    string passWord = Console.ReadLine();
+                    Console.WriteLine(Code.TestPassword(passWord));
                     break;
             }
         }
