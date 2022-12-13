@@ -48,7 +48,7 @@ namespace UserRegistration
                 return "Mobile number regex failed";
         }
         /// <summary>
-        /// Uc 5 Uc6 Uc7 Password rule 3
+        /// Uc 5 Uc6 Uc7 Uc 8 Password rule 4
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
