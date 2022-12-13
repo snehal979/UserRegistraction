@@ -13,7 +13,7 @@ namespace UserRegistration
         /// Uc1 Test for First Name
         /// </summary>
         const string Name = "^[a-zA-Z]{3,}";
-        public static string TestName(string input)
+        public string TestName(string input)
         {
             if (Regex.IsMatch(input, Name))
                 return "First/last name matches";
