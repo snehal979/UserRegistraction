@@ -15,7 +15,7 @@ namespace UserRegistration
         const string Name = "^[a-zA-Z]{3,}";
         const string Email = "^[a-zA-Z0-9]+[.+-_]{0,1}[a-zA-Z0-9]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}";
         const string MobileNumber = "^(91)+[0-9]{10}";
-        const string Password = "^[A-Za-z]{8}$";
+        const string Password = "^[a-z]{8, }([A-Z]{1,})$";
         public string TestName(string input)
         {
             if (Regex.IsMatch(input, Name))
@@ -48,7 +48,7 @@ namespace UserRegistration
                 return "Mobile number regex failed";
         }
         /// <summary>
-        /// Uc 5.1
+        /// Uc 5 Uc6 Password rule 2
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
