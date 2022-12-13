@@ -7,8 +7,8 @@ namespace UserRegistration
         public static void Main(string[] args)
         {
             Console.WriteLine("welcome to User Registration");
-            Console.WriteLine("hint 1. name(first/last) 2.email ");
-           
+            Console.WriteLine("hint 1. name(first/last) 2.email 3.Mobile number");
+
             Validation Code = new Validation();
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -37,6 +37,10 @@ namespace UserRegistration
                    • 7. abc@gmail.com.com
                    • 8. abc+100@gmail.com */
                     break;
+                case 3:
+                    Console.WriteLine(Code.TestMobile("915335335353"));
+                    break;
             }
+        }
     }
 }
