@@ -41,7 +41,7 @@ namespace UserRegistration
                     Console.WriteLine(Code.TestMobile("915335335353"));
                     break;
                 case 4:
-                    Console.WriteLine("Enter the password");//"snehalnds."
+                    Console.WriteLine("Enter the password");//"snehalndsS."
                     string passWord = Console.ReadLine();
                     Console.WriteLine(Code.TestPassword(passWord));
                     break;
